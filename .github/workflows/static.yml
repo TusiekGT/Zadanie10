@@ -36,10 +36,10 @@ jobs:
         uses: actions/setup-node@v4
        
       - name: Install dependencies
-        uses: npm install
+        run: npm install
        
       - name: Build
-        uses: npm run build -- --base=/Zadanie10/
+        run: npm run build -- --base=/Zadanie10/
        
       - name: Setup Pages
         uses: actions/configure-pages@v5
